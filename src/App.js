@@ -91,7 +91,12 @@ const App = () => {
     -webkit-animation: fly 10s linear infinite;
   `
   const SuspenseLoader = () => <Wrapper>
-      <LogoWrapper animate={{scale: [.6, 1, .6]}} transition={{duration: 2, delay: 1, repeat:Infinity, type:"spring"}}>
+        <One/>
+        <Two/>
+        <Three/>
+        <Four/>
+        <Five/>
+      <LogoWrapper animate={{scale: [.6, 1, .6]}} transition={{duration: 2, delay: 2, repeat:Infinity, type:"spring"}}>
           <Logo></Logo>
       </LogoWrapper>
   </Wrapper>
