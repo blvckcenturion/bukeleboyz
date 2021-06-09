@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@font-face {
+    font-family: "ExtendedMain";
+    src: url("./assets/fonts/ExtendedMain.otf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "ExtendedSecondary";
+    src: url("./assets/fonts/ExtendedSecondary.otf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #EBEBEB;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  @keyframes fly {
+    100% {
+        transform: rotate(2turn) translate(20vh) rotate(-2turn);
+        -webkit-transform: rotate(2turn) translate(200px) rotate(-2turn);
+        -moz-transform: rotate(2turn) translate(200px) rotate(-2turn);
+        -ms-transform: rotate(2turn) translate(200px) rotate(-2turn);
+        -o-transform: rotate(2turn) translate(200px) rotate(-2turn);
+    }
+  }
+
+  @keyframes fly2{
+    100% {
+        transform: rotate(4turn) translate(600px) rotate(2turn);
+        -webkit-transform: rotate(-2turn) translate(200px) rotate(2turn);
+        -moz-transform: rotate(-2turn) translate(200px) rotate(2turn);
+        -ms-transform: rotate(-2turn) translate(200px) rotate(2turn);
+        -o-transform: rotate(-2turn) translate(200px) rotate(2turn);
+    }
+  }
+
+  @keyframes fly3{
+    100% {
+        transform: rotate(-2turn) translate(20vh) rotate(2turn);
+        -webkit-transform: rotate(-2turn) translate(200px) rotate(2turn);
+        -moz-transform: rotate(-2turn) translate(200px) rotate(2turn);
+        -ms-transform: rotate(-2turn) translate(200px) rotate(2turn);
+        -o-transform: rotate(-2turn) translate(200px) rotate(2turn);
+    }
+  }
+
