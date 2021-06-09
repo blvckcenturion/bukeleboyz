@@ -7,7 +7,6 @@ import HowToBuy from './pages/HowToBuy'
 import Resources from './pages/TheProject'
 import TheProject from './pages/TheProject'
 import styled from "@emotion/styled"
-import {motion} from 'framer-motion'
 import Div100vh from 'react-div-100vh'
 import {LogoWrapper} from './Components'
 
