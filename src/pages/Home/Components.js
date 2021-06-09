@@ -2,21 +2,7 @@ import styled from '@emotion/styled';
 import {motion} from 'framer-motion';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
-export const Content = styled(motion.div)`
-  opacity: 1;
-  filter: unset;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: 8% 0 8% 0;
-  z-index: 99;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  color: #FFFFF;
-`
+
 
 export const LogoWrapper = styled(motion.div)`
 width: 10vw;
@@ -36,21 +22,6 @@ margin: 10px 0 10px 0;
     width: 70vw;
 }
 
-`
-
-export const H1 = styled(motion.h1)`
-font-family: "ExtendedSecondary";
-color: #020047;
-letter-spacing: 4px;
-margin: 40px 0;
-@media (max-width: 768px){
-    font-size: 1.3rem;
-    margin: 20px 0;
-}
-&:hover {
-    color: #EBEBEB;
-    transition: 1s;
-}
 `
 
 export const Socials = styled(motion.div)`

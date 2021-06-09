@@ -3,12 +3,9 @@ import {ReactComponent as Logo} from '../../assets/images/logo.svg'
 import {Link} from 'react-router-dom'
 import {socials} from '../../utils/data'
 import {useTranslation} from 'react-i18next';
-import {LogoWrapper} from '../../Components';
-
+import {LogoWrapper, H1, Content} from '../../components/GlobalComponents';
 import {
-  Content,
   HR,
-  H1,
   Socials,
   StyledSocial,
   LanguageSelector,
