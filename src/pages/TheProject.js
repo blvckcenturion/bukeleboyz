@@ -1,11 +1,46 @@
 import React from 'react'
-import NavBar from '../components/NavBar'
+import {PageContent} from '../components/GlobalComponents'
 
 const TheProject = () => {
     return (
-        <div>
-            <NavBar>aaaa</NavBar>
-        </div>
+        <PageContent animate={{opacity: [0,1]}} transition={{duration: .7, delay:1, type:"spring"}}>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIII22II</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+
+            <h1>HIIIII</h1>
+            <h1>HIIIII</h1>
+        </PageContent>
     )
 }
 

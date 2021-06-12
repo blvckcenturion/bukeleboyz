@@ -36,8 +36,6 @@ export const Content = styled(motion.div)`
   justify-content: space-evenly;
   flex-direction: column;
   color: #FFFFF;
-  overflow: scroll;
-  
 `
 
 export const H1 = styled(motion.h1)`
@@ -54,4 +52,24 @@ border:none;
     color: #EBEBEB;
     transition: 1s;
 }
+`
+
+export const PageContent = styled(motion.div)`
+  opacity: 0;
+  filter: unset;
+  left: 0;
+  right: 0;
+  top: 10vh;
+  bottom: 0;
+  margin: 8% 0 8% 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #FFFFF;
+  overflow-y: scroll;
+  width: 100%;
+  background-color: white;
+  height: 100%;
 `
