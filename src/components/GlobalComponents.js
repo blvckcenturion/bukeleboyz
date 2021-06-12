@@ -36,6 +36,8 @@ export const Content = styled(motion.div)`
   justify-content: space-evenly;
   flex-direction: column;
   color: #FFFFF;
+  overflow: scroll;
+  
 `
 
 export const H1 = styled(motion.h1)`
@@ -44,9 +46,8 @@ color: #020047;
 letter-spacing: 4px;
 margin: 40px 0;
 border:none;
-background-color:
 @media (max-width: 768px){
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 20px 0;
 }
 &:hover {

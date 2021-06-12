@@ -60,7 +60,7 @@ export const LanguageSelector = styled(motion.div)`
     font-family: "ExtendedSecondary";
     position: absolute;
     z-index: 500;
-    right: 0;
+    right: -300px;
     top: 0;
     display: flex;
     flex-direction: row;
@@ -90,7 +90,7 @@ export const rightAnimation = {
 }
 export const FastTransition = {
     duration: .5,
-    type: "spring"
+    type: "tween"
 }
 
     

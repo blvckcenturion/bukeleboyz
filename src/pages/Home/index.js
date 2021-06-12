@@ -24,7 +24,7 @@ const Home = () => {
     
     return (
         <>
-        <LanguageSelector animate={rightAnimation} transition={{duration: .7, delay:6, type:"spring"}}>
+        <LanguageSelector animate={{translateX:[0, -300], opacity: [0,1]}} transition={{duration: .7, delay:6, type:"spring"}}>
         <LanguageButton type="button" onClick={() => changeLanguage('en')} primary={i18n.language.split("-")[0] !== "es" }>EN</LanguageButton>
         <LanguageButton type="button" onClick={() => changeLanguage('es')} primary={i18n.language.split("-")[0] === "es" }>ES</LanguageButton>
         </LanguageSelector>

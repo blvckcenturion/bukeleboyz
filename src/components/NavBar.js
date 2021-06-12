@@ -26,10 +26,10 @@ const NavBar = () => {
             heading = t("sections.resources")
             break;
         default:
-            heading = "";
+            heading = t("error.title");
             break;
     }
-    const LogoDiv = styled.div`
+    const LogoDiv = styled(motion.div)`
         width: 7vh;
         heigth: 7vh;
         display: flex;
@@ -59,7 +59,7 @@ const NavBar = () => {
         font-size: 5vh;
         color: #020047;
     `
-    const BackButtonDiv = styled.button`
+    const BackButtonDiv = styled(motion.button)`
         width: 8vh;
         height: 8vh;
         display: flex;
@@ -69,7 +69,7 @@ const NavBar = () => {
         background-color: transparent;
         border: none;
     `
-    const H1 = styled.h1`
+    const H1 = styled(motion.h1)`
         font-family: "ExtendedSecondary";
         color: #020047;
         letter-spacing: 4px;
@@ -89,16 +89,16 @@ const NavBar = () => {
     `
     return (
         location.pathname !== "/" && 
-       <StyledNav animate={{translateY: [0,200]}} transtion={{duration: 2, delay:2, type:"tween"}}>
-            <BackButtonDiv type="button" onClick={() => history.push('/', {})}>
+       <StyledNav animate={{translateY: [0,200]}} transtion={{duration: 2, delay:2, type:"spring"}}>
+            <BackButtonDiv type="button" onClick={() => history.push('/', {})} animate={{translateX: [-100,0], opacity:[0,1]}} transtion={{duration: 2, delay:4, type:"spring"}}>
                 <BackButton icon={faArrowLeft}/>
             </BackButtonDiv>
             <HR />
-            <H1>{heading}</H1>
+            <H1 animate={{translateY: [-100,0], opacity:[0,1]}} transtion={{duration: 2, delay:4, type:"spring"}} >{heading}</H1>
             {width >= 768 &&
             <>
                 <HR />
-                <LogoDiv>
+                <LogoDiv animate={{translateX: [100,0], opacity:[0,1]}} transtion={{duration: 2, delay:4, type:"spring"}}>
                     <Logo></Logo>
                 </LogoDiv>
             </>

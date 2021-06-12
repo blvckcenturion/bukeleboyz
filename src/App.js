@@ -9,6 +9,7 @@ import {Wrapper} from './components/GlobalComponents'
 import SuspenseLoader from './components/SuspenseLoader'
 import MetaBalls from './components/MetaBalls'
 import NavBar from './components/NavBar'
+import Error from './pages/Error'
 
 const App = () => {
     return (
@@ -30,6 +31,9 @@ const App = () => {
                     </Route>
                     <Route path="/buy">
                         <HowToBuy/>
+                    </Route>
+                    <Route path="*">
+                        <Error/>
                     </Route>
                 </Switch>
             </Wrapper>

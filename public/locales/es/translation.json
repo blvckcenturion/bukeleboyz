@@ -3,5 +3,9 @@
         "project": "EL PROYECTO",
         "buy": "COMO COMPRAR",
         "resources": "PAPEL BLANCO"
+    },
+    "error":{
+        "title": "404 - ERROR",
+        "message": "PAGINA NO ENCONTRADA."
     }
 }
