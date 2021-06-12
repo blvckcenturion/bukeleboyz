@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Resources = () => {
+const Docs = () => {
     return (
         <div>
             Resources
@@ -8,4 +8,4 @@ const Resources = () => {
     )
 }
 
-export default Resources
+export default Docs

@@ -23,7 +23,7 @@ align-items: center;
 justify-content: center;
 `
 export const Content = styled(motion.div)`
-  opacity: 1;
+  opacity: 0;
   filter: unset;
   left: 0;
   right: 0;
@@ -43,6 +43,8 @@ font-family: "ExtendedSecondary";
 color: #020047;
 letter-spacing: 4px;
 margin: 40px 0;
+border:none;
+background-color:
 @media (max-width: 768px){
     font-size: 1.3rem;
     margin: 20px 0;

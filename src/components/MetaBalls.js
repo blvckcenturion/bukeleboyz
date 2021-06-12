@@ -18,7 +18,7 @@ const MetaBalls = () => {
         border-radius: 100%;
         width: 150%;
         height: 100%;
-        background-color: #a960ee;
+        background-color: #3BB8BA;
         top: -300px;
         z-index: 1;
         animation: fly 12s linear infinite;
@@ -26,10 +26,11 @@ const MetaBalls = () => {
     `
     const MetaBall2 = styled(AnimatedDiv)`
         width: 80%;
-        height: 100%;
-        background-color: #FF2079;
-        bottom: -30px;
+        height: 70%;
+        background-color: #C2F261;
+        bottom: -100px;
         left: -200px;
+        z-index: 5;
         animation: fly2 10s linear infinite;
         -webkit-animation: fly2 10s linear infinite;
     `
@@ -41,7 +42,7 @@ const MetaBalls = () => {
         bottom: -100px;
         right: -100px;
         z-index: 10;
-        background-color: #90e0ff;
+        background-color: #75E6DA;
         animation: fly3 10s linear infinite;
         -webkit-animation: fly3 10s linear infinite;
     `
@@ -51,10 +52,10 @@ const MetaBalls = () => {
         width: 50%;
         height: 80%;
         margin: auto;
-        bottom: 100px;
+        bottom: 50px;
         right: -100px;
-        z-index: 4;
-        background-color: #440BD4;
+        z-index: 6;
+        background-color: #189AB4;
         animation: fly3 10s linear infinite;
         -webkit-animation: fly3 10s linear infinite;
     `
@@ -62,9 +63,10 @@ const MetaBalls = () => {
         border-radius: 100%;
         width: 50%;
         height: 60%;
-        bottom: -200px;
+        bottom: 50px;
         left: -100px;
-        background-color: #ED4BFB;
+        z-index: 2;
+        background-color: #1D5B5E;
         animation: fly 10s linear infinite;
         -webkit-animation: fly 10s linear infinite;
     `

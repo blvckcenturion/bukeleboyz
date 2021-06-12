@@ -1,8 +1,7 @@
 {
-    "home": {
+    "sections": {
         "project": "EL PROYECTO",
         "buy": "COMO COMPRAR",
-        "resources": "RECURSOS"
-
+        "resources": "PAPEL BLANCO"
     }
 }

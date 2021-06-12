@@ -3,15 +3,18 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import ScrollToTop from './utils/ScrollToTop'
 import Home from './pages/Home'
 import HowToBuy from './pages/HowToBuy'
-import Resources from './pages/TheProject'
+import Docs from './pages/Docs'
 import TheProject from './pages/TheProject'
 import {Wrapper} from './components/GlobalComponents'
-import SuspenseLoader from './components/SuspenseLoader';
+import SuspenseLoader from './components/SuspenseLoader'
 import MetaBalls from './components/MetaBalls'
+import NavBar from './components/NavBar'
+
 const App = () => {
     return (
         <Suspense fallback={<SuspenseLoader/>}>
         <Router>
+            <NavBar/>
             <ScrollToTop/>
             <Wrapper>
             <MetaBalls/>
@@ -22,8 +25,8 @@ const App = () => {
                     <Route path="/about">
                         <TheProject/>
                     </Route>
-                    <Route path="/resources">
-                        <Resources/>
+                    <Route path="/docs">
+                        <Docs/>
                     </Route>
                     <Route path="/buy">
                         <HowToBuy/>

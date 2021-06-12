@@ -1,7 +1,7 @@
 {
-    "home": {
+    "sections": {
         "project": "THE PROJECT",
         "buy": "HOW TO BUY",
-        "resources": "RESOURCES"
+        "resources": "WHITE PAPER"
     }
 }
