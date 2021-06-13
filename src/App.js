@@ -1,6 +1,5 @@
 import React, {Suspense} from 'react'
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
-import ScrollToTop from './utils/ScrollToTop'
 import Home from './pages/Home'
 import HowToBuy from './pages/HowToBuy'
 import Docs from './pages/Docs'
@@ -16,7 +15,6 @@ const App = () => {
         <Suspense fallback={<SuspenseLoader/>}>
         <Router>
             <NavBar/>
-            <ScrollToTop/>
             <Wrapper>
             <MetaBalls/>
                 <Switch>

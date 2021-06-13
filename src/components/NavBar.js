@@ -39,6 +39,7 @@ const NavBar = () => {
     const StyledNav = styled(motion.div)`
         width: 100vw;
         height: 10vh;
+        background-color: rgba(59, 184, 186, 0.4);
         z-index: 500;
         position: absolute;
         top: -200px;
@@ -58,6 +59,7 @@ const NavBar = () => {
     const BackButton = styled(FontAwesomeIcon)`
         font-size: 5vh;
         color: #020047;
+        
     `
     const BackButtonDiv = styled(motion.button)`
         width: 8vh;
@@ -69,7 +71,7 @@ const NavBar = () => {
         background-color: transparent;
         border: none;
     `
-    const H1 = styled(motion.h1)`
+    const H2 = styled(motion.h2)`
         font-family: "ExtendedSecondary";
         color: #020047;
         letter-spacing: 4px;
@@ -94,7 +96,7 @@ const NavBar = () => {
                 <BackButton icon={faArrowLeft}/>
             </BackButtonDiv>
             <HR />
-            <H1 animate={{translateY: [-100,0], opacity:[0,1]}} transtion={{duration: 2, delay:4, type:"spring"}} >{heading}</H1>
+            <H2 animate={{translateY: [-100,0], opacity:[0,1]}} transtion={{duration: 2, delay:4, type:"spring"}} >{heading}</H2>
             {width >= 768 &&
             <>
                 <HR />

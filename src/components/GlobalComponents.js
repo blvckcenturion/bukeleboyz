@@ -54,22 +54,3 @@ border:none;
 }
 `
 
-export const PageContent = styled(motion.div)`
-  opacity: 0;
-  filter: unset;
-  left: 0;
-  right: 0;
-  top: 10vh;
-  bottom: 0;
-  margin: 8% 0 8% 0;
-  z-index: 99;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  color: #FFFFF;
-  overflow-y: scroll;
-  width: 100%;
-  background-color: white;
-  height: 100%;
-`

@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from '@emotion/styled'
-
+import {motion} from 'framer-motion'
 const MetaBalls = () => {
-    const AnimatedDiv = styled.div`
+
+    const AnimatedDiv = styled(motion.div)`
         position: absolute;
         filter: blur(80px);
         opacity: 0.8;
