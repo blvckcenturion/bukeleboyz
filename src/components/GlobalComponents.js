@@ -15,7 +15,7 @@ margin: 0 0 10% 0;
 export const Wrapper = styled(Div100vh)`
 width: 100vw;
 height: 100vh;
-background: #EBEBEB;
+background: #cccccc;
 position: relative;
 overflow: hidden;
 display: flex;
