@@ -12,7 +12,7 @@ grid-template-columns: repeat(4,1fr);
 grid-template-rows: 1fr;
 align-items: stretch;
 justify-items:stretch;
-margin-bottom: 5%;
+
 @media (max-width: 767px){
     height: 40%;
     grid-template-columns: 1fr;

@@ -5,12 +5,12 @@ import MetaBalls from './MetaBalls'
 const SuspenseLoader = () => {
     return (
         <Wrapper>
-        <MetaBalls/>
-        <Content>
-        <LogoWrapper>
-          <H1 animate={{scale: [0,1]}} transition={{duration:2, delay: 2, type:"spring"}}>Loading..</H1>
-        </LogoWrapper>
-        </Content>
+          <MetaBalls/>
+          <Content>
+          <LogoWrapper>
+            <H1>Loading..</H1>
+          </LogoWrapper>
+          </Content>
         </Wrapper>
     )
 }

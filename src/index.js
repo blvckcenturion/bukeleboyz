@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import 'normalize.css'
-import './utils/i18n'
+import './index.css'
 
 
 ReactDOM.render(
