@@ -1,17 +1,19 @@
 @font-face {
     font-family: "ExtendedMain";
-    src: url("./assets/fonts/ExtendedMain.otf");
+    src: url("./fonts/ExtendedMain.woff");
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    font-display: auto;
+    unicode-range: U+000-5FF;
   }
   
   @font-face {
     font-family: "ExtendedSecondary";
-    src: url("./assets/fonts/ExtendedSecondary.otf");
+    src: url("./fonts/ExtendedSecondary.woff");
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    font-display: auto;
+    unicode-range: U+000-5FF;
   }
   
   

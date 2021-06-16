@@ -13,6 +13,7 @@ const MetaBalls = () => {
         -moz-transform: rotate(0) translate(200px) rotate(0);
         -ms-transform: rotate(0) translate(200px) rotate(0);
         -o-transform: rotate(0) translate(200px) rotate(0);
+        opacity: 0.7;
     `
     const MetaBall1 = styled(AnimatedDiv)`
         border-radius: 100%;
