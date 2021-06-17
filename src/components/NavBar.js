@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import {ReactComponent as Logo} from '../assets/images/logo.svg';
 import useWindowDimensions from '../utils/WindowDimensions';
-import { useTranslation } from 'react-i18next'
 import {motion} from "framer-motion";
  
 
@@ -13,20 +12,19 @@ const NavBar = () => {
     const {width} = useWindowDimensions()
     const location = useLocation();
     const history = useHistory();
-    const {t} = useTranslation();
     let heading;
     switch(location.pathname){
         case "/about":
-            heading = t("sections.project");
+            heading = "THE PROJECT";
             break;
         case "/buy":
-            heading = t("sections.buy");
+            heading = "BUY";
             break;
         case "/docs":
-            heading = t("sections.resources")
+            heading = "DOCS"
             break;
         default:
-            heading = t("error.title");
+            heading = "ERROR";
             break;
     }
     const LogoDiv = styled(motion.div)`

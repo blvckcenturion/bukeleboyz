@@ -1,24 +1,23 @@
 import React from 'react'
 import useWindowDimensions from '../../utils/WindowDimensions';
 import {TH5, SecondaryButton, RoadMapText, RoadMap, Rocket, Chart, Group,  Circle, Line, TokenomicsGrid, TokenInfoGrid} from './Components';
-import {Section, Div, PageContent, RegularText, H4, MainHeading, Heading, SubHeading, H3, HR, Button} from '../../components/GlobalComponents';
+import {Section, Div, PageContent, RegularText, H4, MainHeading, Heading, SubHeading, H3, HR, Button, leftAnimation, FastTransition, rightAnimation} from '../../components/GlobalComponents';
 
 const TheProject = () => {
     const {width} = useWindowDimensions();
     const bigScreen = width >= 768
     return (
-        //animate={{opacity: [0,1], translateY: [200,0]}} transition={{duration: .7, delay:1, type:"spring"}}
-        <PageContent >
+        <PageContent>
             <Section height={"100vh"}>
-                <RegularText style={{paddingTop: "23vh"}}>Welcome to</RegularText>
-                <MainHeading>BUKELE FINANCE</MainHeading>
-                <H4 style={{margin: `${!bigScreen && "5px 20px"}`}} primary>TAKE OFF WITH US. SAFELY TO EL SALVADOR.</H4>
+                <RegularText animate={leftAnimation} transition={{delay: 1, ...FastTransition}} style={{paddingTop: "23vh", opacity:'0'}}>Welcome to</RegularText>
+                <MainHeading animate={{translateY: [100,0],skewY: [20,0], opacity:[0,1]}} style={{opacity:"0"}} transition={{delay:1.5, duration:1.5, type: "spring"}}>BUKELE FINANCE</MainHeading>
+                <H4 animate={rightAnimation} transition={{delay:3, ...FastTransition}} style={{margin: `${!bigScreen && "5px 20px"}`, opacity:"0"}} primary>TAKE OFF WITH US. SAFELY TO EL SALVADOR.</H4>
                 <Div height={"50%"} width={bigScreen ? "50%" : "80%"} margin={bigScreen ? "30px 20% 0 20%" : "0 8%"}>
-                    <RegularText>
+                    <RegularText style={{opacity:"0"}} animate={leftAnimation} transition={{delay:3.5, ...FastTransition}} >
                     here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
                     </RegularText>
                 </Div>
-                <Div height={"70%"} width={bigScreen ? "70%" : "90%"} margin={bigScreen ? "2% 0 0 0" : "3% 0"}>
+                <Div animate={rightAnimation} style={{opacity:"0"}} transition={{delay:4, duration:1, type: "spring"}} height={"70%"} width={bigScreen ? "70%" : "90%"} margin={bigScreen ? "2% 0 0 0" : "3% 0"}>
                     <Button type="button">BUY NOW</Button>
                     <Button type="button">LIVE CHART</Button>
                 </Div>

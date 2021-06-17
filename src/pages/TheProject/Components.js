@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import {ReactComponent as rocket} from '../../assets/images/one.svg'
 import {ReactComponent as chartSvg} from '../../assets/images/chart.svg'
 import {ReactComponent as group} from '../../assets/images/group.svg'
+import { RegularText, H4, Button} from '../../components/GlobalComponents';
 //Containers
 
 export const TokenInfoGrid = styled.div`
@@ -45,100 +46,7 @@ align-items: center;
 }
 `
 //Text
-export const RegularText = styled.p`
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,sans-serif;
-    font-weight: 400;
-    color: ${props => props.color ? props.color : "white"};
-    font-size: 1.5rem;
-    margin: 0;
-    text-align: ${props => props.textAlign ? props.textAlign : 'center'};
-    @media (max-width: 767px){
-        font-size: 0.9rem;
-    }
-`
-
-export const H4 = styled.h4`
-    font-family: 'ExtendedSecondary', sans-serif;
-    color: ${props => props.primary ? "#10222E" : "#045877"};
-    font-size: ${props => props.primary ? "1.1rem" : "0.9rem"};
-    margin: 10px;
-    text-align: center;
-    @media (max-width: 768px) {
-        font-size: ${props => props.primary ? "0.9rem" : "0.7rem"};
-        margin: 5px;
-    }
-`
-export const MainHeading = styled.h2`
-    font-family: 'ExtendedMain', sans-serif;
-    font-size: 4rem;
-    margin: 30px 0;
-    letter-spacing: 7px;
-    color: #022F40;
-    text-align: center;
-    @media (max-width: 768px){
-        font-size: 2rem;
-        
-    }
-    @media (max-width: 1050px) and (min-width: 768px){
-        font-size: 2.5rem;
-        margin: 30px 0;
-    }
-`
-export const Heading = styled(MainHeading)`
-    font-size: 3.1rem;
-    @media (max-width: 768px) and (min-width:350px){
-        font-size: 1.5rem;
-    }
-    @media (max-width: 349px){
-        font-size: 1.2rem;
-    }
-    @media (max-width: 1050px) and (min-width: 768px){
-        font-size: 2.1rem;
-    }
-`
-export const SubHeading = styled.h3`
-    color: ${props => props.color ? props.color : "#020047"};
-    font-family: "ExtendedMain";
-    letter-spacing: 5px;
-    text-align: ${props => props.textAlign ? props.textAlign : "center"};
-    margin: ${props => props.margin ? props.margin : "0"};
-    @media(max-width: 767px){
-        font-size: 1rem;
-    }
-`
-export const H3 = styled.h3`
-    color: ${ props => props.color ? props.color : "#022F40"};
-    font-family: "ExtendedMain";
-    align-self: center;
-    justify-self: center;
-    grid-area: ${props => props.area};
-    margin: 0;
-    @media (min-width: 768px){
-        justify-self: ${props => props.justify};
-        padding: 0 30px;
-    }
-`
 //Extras
-export const HR = styled.div`
-    background-color: #022F40;
-    width: ${props => props.horizontal ? props.width ? props.width : "80%" : "3px"};
-    height: ${props => props.vertical ? props.width : "3px" };
-    margin: ${props => props.margin};
-`
-export const Button = styled.button`
-    background-color: transparent;
-    border: 3px solid #022F40;
-    color: #022F40;
-    border-radius: 20px;
-    font-family: 'ExtendedSecondary', sans-serif;
-    padding: 30px 20px;
-    width: 30%;
-    @media (max-width: 767px){
-        width: 40%;
-        font-size: 0.7rem;
-        padding: 15px 0;
-    }
-`
 export const Circle = styled.div`
 border: 12px solid #022F40;
 grid-area: ${props => props.area};
