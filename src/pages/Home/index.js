@@ -6,6 +6,7 @@ import {HR, H1, Div, leftAnimation, rightAnimation, FastTransition} from '../../
 import useWindowDimensions from '../../utils/WindowDimensions';
 import styled from '@emotion/styled';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import PageInfo from '../../components/PageInfo';
 
 const Home = () => {
     const {width} = useWindowDimensions();
@@ -24,6 +25,8 @@ const Home = () => {
     `
 
     return (
+      <>
+      <PageInfo title={"Home"}/>
         <Div width={"100%"} height={"100%"} flexDirection={"column"} style={{zIndex:"99", opacity:"0"}}  animate={{translateY: [-500, 0], opacity:[0,1]}} transition={{duration:1.5, delay: 1, type: "spring"}}>
             <Div width={"50%"} height={"20%"} animate={{rotate: [-180, 0]}} transition={{duration: 1.5, delay: 2.5, type:"spring"}}>
                 <Logo/>
@@ -47,6 +50,7 @@ const Home = () => {
                 }
             </Div>
           </Div>
+          </>
     )
 }
 

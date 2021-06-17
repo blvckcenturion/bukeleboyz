@@ -1,6 +1,7 @@
 import d1 from '../assets/images/d1.jpeg'
 import { Div, HR, SubHeading, RegularText} from '../components/GlobalComponents'
 import useWindowDimensions from '../utils/WindowDimensions'
+
 const Step = ({height, children, step : {n, text}}) => {
     const {width} = useWindowDimensions()
 

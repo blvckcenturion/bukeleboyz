@@ -2,6 +2,7 @@ import React, {Suspense,lazy} from 'react'
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import {Wrapper} from './components/GlobalComponents'
 import SuspenseLoader from './components/SuspenseLoader'
+import history from './routerHistory';
 
 const Home = lazy(() => import('./pages/Home'))
 const TheProject = lazy(() => import('./pages/TheProject'))
@@ -12,9 +13,10 @@ const MetaBalls = lazy(() => import('./components/MetaBalls'))
 const Error = lazy(() => import('./pages/Error'))
 
 const App = () => {
+    
     return (
         <Suspense fallback={<SuspenseLoader/>}>
-        <Router>
+        <Router history={history}>
             <NavBar/>
                 <Wrapper>
                 <MetaBalls/> 

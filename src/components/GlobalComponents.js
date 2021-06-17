@@ -12,8 +12,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 `
-
-
 export const H1 = styled(motion.h1)`
 font-family: "ExtendedSecondary";
 color: #020047;

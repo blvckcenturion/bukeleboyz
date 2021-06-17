@@ -2,11 +2,14 @@ import React from 'react'
 import useWindowDimensions from '../../utils/WindowDimensions';
 import {TH5, SecondaryButton, RoadMapText, RoadMap, Rocket, Chart, Group,  Circle, Line, TokenomicsGrid, TokenInfoGrid} from './Components';
 import {Section, Div, PageContent, RegularText, H4, MainHeading, Heading, SubHeading, H3, HR, Button, leftAnimation, FastTransition, rightAnimation} from '../../components/GlobalComponents';
-
+import Footer from '../../components/Footer'
+import PageInfo from '../../components/PageInfo';
 const TheProject = () => {
     const {width} = useWindowDimensions();
     const bigScreen = width >= 768
     return (
+        <>
+        <PageInfo title={"About"}/>
         <PageContent>
             <Section height={"100vh"}>
                 <RegularText animate={leftAnimation} transition={{delay: 1, ...FastTransition}} style={{paddingTop: "23vh", opacity:'0'}}>Welcome to</RegularText>
@@ -124,32 +127,9 @@ const TheProject = () => {
                     </Div>
                 </Div>
             </Section>
-            <Section height={bigScreen ? "75vh" : "120vh"}>
-                <Div height={"90%"} flexDirection={bigScreen ? "row" : "column"}>
-                    <Div width={bigScreen ? "50%" : "90%"} height={bigScreen ? "90%" : "50%"} flexDirection={"column"} >
-                        <HR margin={bigScreen ? "40px 0" : "20px 0"} horizontal/>
-                        <SubHeading>RESOURCES</SubHeading>
-                        <HR margin={bigScreen ? "40px 0" : "20px 0"} horizontal/>
-                        <H4 primary>WHITE PAPER</H4>
-                        <H4 primary>CONTRACT CODE</H4>
-                        <H4 primary>CONTRACT ADDRESS</H4>
-                        <H4 primary>LIVE CHART</H4>
-                        <HR margin={bigScreen ? "40px 0" : "20px 0"} horizontal/>
-                    </Div>
-                    { bigScreen && <HR width={"100%"} vertical/>}
-                    <Div width={ bigScreen ? "50%" : "90%"} height={bigScreen ? "90%" : "50%"} flexDirection={"column"}>
-                        <HR margin={bigScreen ? "40px 0" : "20px 0"} horizontal/>
-                        <SubHeading>FOLLOW US</SubHeading>
-                        <HR margin={bigScreen ? "40px 0" : "20px 0"} horizontal/>
-                        <H4 primary>FACEBOOK</H4>
-                        <H4 primary>INSTAGRAM</H4>
-                        <H4 primary>TWITTER</H4>
-                        <H4 primary>LINKEDIN</H4>
-                        <HR margin={bigScreen ? "40px 0" : "20px 0"} horizontal/>
-                    </Div>
-                </Div>
-            </Section>
+            <Footer/>
         </PageContent>
+        </>
     )
 }
 export default TheProject
