@@ -11,7 +11,7 @@ const HowToBuy = () => {
         <PageContent>
             <Section height={"100vh"}>
                 <Div width={"80%"} flexDirection={"column"}>
-                    <MainHeading style={{paddingTop: "23vh", opacity: "0"}} animate={{translateY: [100,0],skewY: [20,0], opacity:[0,1]}} transition={{delay:1, duration:1.5, type: "spring"}} >How to buy Bukele</MainHeading>
+                    <MainHeading style={{paddingTop: "23vh", opacity: "0"}} animate={{translateY: [100,0],skewY: [20,0], opacity:[0,1]}} transition={{delay:1, duration:1, type: "spring"}} >How to buy Bukele</MainHeading>
                     <H4 animate={rightAnimation} transition={{delay:3, ...FastTransition}} style={{opacity:"0"}}  primary>A step by step guide on how to buy Bukele from Pancakeswap.</H4>
                     <Div height={"40%"}>
                         <Button animate={{opacity: [0,1], translateY: [-100,0]}} transition={{delay:3.5, ...FastTransition}} style={{opacity:"0", width: `${width <= 767 && '70%'}`}}> GO TO PANCAKESWAP</Button>
